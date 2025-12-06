@@ -42,6 +42,11 @@ A glimpse of the clean and minimal dashboard interface — designed for clarity 
 
 ---
 
+## POS Master — Workflow
+
+<img src="https://github.com/DigitalTrailblazer/POS-Master/blob/main/client/public/workFlow.png" alt="System Workflow Diagram" width="100%" />
+
+
 ##  Tech Stack
 
 ###  Frontend
@@ -67,6 +72,29 @@ A glimpse of the clean and minimal dashboard interface — designed for clarity 
 * cookie-parser
 
 ---
+
+<!-- ## Application Glimpse
+* A preview of clean and minimal interface
+
+*Register UI*
+<img src="./client/public/preview_1.png" alt="Dashboard Screenshot" width="100%" />
+
+*Home Page UI*
+<img src="./client/public/preview_2.png" alt="Dashboard Screenshot" width="100%" />
+
+*Table Management UI*
+<img src="./client/public/preview_3.png" alt="Dashboard Screenshot" width="100%" />
+
+*Menu Page UI*
+<img src="./client/public/preview_4.png" alt="Dashboard Screenshot" width="100%" />
+
+*Order Processing UI*
+<img src="./client/public/preview_5.png" alt="Dashboard Screenshot" width="100%" />
+
+*Dashboard & Analytics*
+<img src="./client/public/preview_6_adminDashboard.png" alt="Dashboard Screenshot" width="100%" /> -->
+
+
 
 ## Entity Relationship Diagram (ERD)
 
