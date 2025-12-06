@@ -1,8 +1,7 @@
-# POS_System
 
 # 🍽️ POS_System | (Point of Sale) Restaurant management System 
 
-## ⭐ Overview 
+##  Overview 
 A restaurant **POS system** helps **take orders**, **manage tables**, and **generate bills** smoothly.
 It tracks orders, **handles payments**, and **manages inventory** to make restaurant operations faster and easier
 
@@ -11,7 +10,7 @@ It tracks orders, **handles payments**, and **manages inventory** to make restau
 
 A glimpse of the clean and minimal dashboard interface — designed for clarity and productivity.
 
-<img src="https://github.com/DigitalTrailblazer/OrganizeIt-/blob/main/frontend/src/assets/dashboard.png" alt="dashboard preview"/>
+<img src="" alt="dashboard preview"/>
 
 ---
 
@@ -36,10 +35,10 @@ A glimpse of the clean and minimal dashboard interface — designed for clarity 
 * Skeleton Loaders (React Query)
 
 ### 🔹 Advanced Features
-Token-based secure APIs
-Error-handling middleware
-ESLint-managed clean code
-Real-time sync using React Query
+* Token-based secure APIs
+* Error-handling middleware
+* ESLint-managed clean code
+* Real-time sync using React Query
 
 ---
 
@@ -177,7 +176,7 @@ Backend runs on [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 📌 API Endpoints (Summary)
+## API Endpoints (Summary)
 
 ### **Auth Routes**
 
