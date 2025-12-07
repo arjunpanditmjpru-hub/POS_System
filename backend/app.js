@@ -22,7 +22,6 @@ const PORT = config.port
 //     ],
 //     credentials: true
 // }));
-const cors = require("cors");
 
 app.use(cors({
     origin: [
