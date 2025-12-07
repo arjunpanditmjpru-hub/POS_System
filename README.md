@@ -101,7 +101,7 @@ A glimpse of the clean and minimal dashboard interface — designed for clarity 
 <img src="./frontend/public/Screenshot 2025-12-07 113544.png" alt="Dashboard Screenshot" width="100%" />
 
 *Order receipt*
-<img src="./frontend/public/Screenshot 2025-12-07 113634.png" alt="Dashboard Screenshot" width="100%" />
+<img src="./frontend/public/Screenshot 2025-12-07 113634.png" alt="Dashboard ScrSt" width="100%" />
 
 
 
