@@ -16,7 +16,10 @@ const PORT = config.port
 
 app.use(cors({
     credentials : true,
-    origin : ["http://localhost:5173"]
+    origin : [
+        "https://pos-system-frontend-ne5v.onrender.com",
+        "http://localhost:5173"
+    ]
 }));
 
 app.use(express.json());
