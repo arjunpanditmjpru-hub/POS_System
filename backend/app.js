@@ -37,8 +37,8 @@ app.use(cookieParser());
 
 
 app.get("/" , (req , res) => {
-    const err = createHttpError(404 , "something went wrong!")
-    throw err;
+    // const err = createHttpError(404 , "something went wrong!")
+    // throw err;
     res.json({message: "Hello from the POS Server!"})
 })
 
