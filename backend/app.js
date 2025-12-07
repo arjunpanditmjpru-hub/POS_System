@@ -11,6 +11,7 @@ const paymentRouter = require("./routes/paymentRoute");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const app = express();
+app.set('trust proxy', 1);
 
 const PORT = config.port 
 
@@ -22,16 +23,15 @@ const PORT = config.port
 //     ],
 //     credentials: true
 // }));
+const frontendURL = 'https://pos-system-frontend-ne5v.onrender.com';
 
-app.use(cors({
-    origin: [
-        "https://pos-system-frontend-ne5v.onrender.com",
-        "http://localhost:5173"
-    ],
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
-}));
+const corsOptions = {
+  origin: frontendURL, 
+  // MANDATORY: Allows the browser to send cookies/auth headers across origins
+  credentials: true, 
+};
+
+app.use(cors(corsOptions));
 
 
 

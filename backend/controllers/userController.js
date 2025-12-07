@@ -79,8 +79,8 @@ const login = async (req , res , next ) => {
         res.cookie("accessToken", accessToken, {
             httpOnly: true,
             secure: true,
-            sameSite: "none",
-            path: "/",          // VERY IMPORTANT
+            sameSite: 'none',
+            path: '/',          // VERY IMPORTANT
             maxAge: 1000 * 60 * 60 * 24 * 30
         })
 
@@ -122,8 +122,8 @@ const logout = async (req , res , next ) => {
         res.clearCookie(accessToken, {
             httpOnly: true,
             secure: true,
-            sameSite: "none",
-            path: "/",          // VERY IMPORTANT
+            sameSite: 'none',
+            path: '/',          // VERY IMPORTANT
             maxAge: 1000 * 60 * 60 * 24 * 30
         })
         res.status(200).json({success : true , message : "User logout successfully!"})
