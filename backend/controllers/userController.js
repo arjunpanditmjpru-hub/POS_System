@@ -81,7 +81,7 @@ const login = async (req , res , next ) => {
             secure: true,
             sameSite: 'none',
             path: '/',          // VERY IMPORTANT
-            maxAge: 1000 * 60 * 60 * 24 * 30
+            maxAge: 1000 * 60 * 60 * 24 * 7
         })
 
         res.status(200).json({ success : true , message : "User login Successfully!" , 
@@ -120,8 +120,7 @@ const logout = async (req , res , next ) => {
             httpOnly: true,
             secure: true,
             sameSite: 'none',
-            path: '/',          // VERY IMPORTANT
-            maxAge: 1000 * 60 * 60 * 24 * 30
+            path: '/',          
         })
         res.status(200).json({success : true , message : "User logout successfully!"})
     } 
