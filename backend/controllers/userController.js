@@ -84,9 +84,6 @@ const login = async (req , res , next ) => {
             maxAge: 1000 * 60 * 60 * 24 * 30
         })
 
-
-        
-
         res.status(200).json({ success : true , message : "User login Successfully!" , 
             data : isEmailExist
         })
