@@ -71,7 +71,7 @@ const updateTable = async ( req , res , next ) => {
             id ,
             {status , currentOrder : orderId},
             {new : true}
-        )
+         )
 
         if(!updatedtable){
             const error = createHttpError(404, "Table not found!");
