@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const connectDB = require("./config/database");
-const config  = require("./config/config");
 const globalErrorHandler = require("./middlewares/globalErrorHandler");
 const createHttpError = require("http-errors");
 const router = require("./routes/userRoute");
@@ -14,13 +13,17 @@ const cors = require("cors");
 const app = express();
 
 app.set('trust proxy', 1);
-const PORT = config.port 
+const PORT = process.env.PORT
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
+// app.use(cors({
+//     origin: 'http://localhost:5173',
+//     credentials: true,
+// }));
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://pos-system-frontend-w0jt.onrender.com',
     credentials: true,
 }));
 
