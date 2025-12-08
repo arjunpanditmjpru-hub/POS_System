@@ -12,11 +12,13 @@ const cors = require("cors");
 
 const app = express();
 
-app.set('trust proxy', 1);
+app.set('trust proxy', true);
 const PORT = process.env.PORT
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
+
+app.use(cookieParser());
 
 // app.use(cors({
 //     origin: 'http://localhost:5173',
@@ -27,7 +29,6 @@ app.use(cors({
     credentials: true,
 }));
 
-app.use(cookieParser());
 
 app.get("/" , (req , res) => {
     res.json({message: "Hello from the POS Server!"})
