@@ -116,11 +116,10 @@ const logout = async (req , res , next ) => {
 
     try {
         // res.clearCookie('accessToken');
-        res.clearCookie(accessToken, {
+        res.clearCookie('accessToken', {
             httpOnly: true,
             secure: true,
-            sameSite: 'none',
-            path: '/',          
+            sameSite: 'none',                
         })
         res.status(200).json({success : true , message : "User logout successfully!"})
     } 
